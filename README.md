@@ -7,12 +7,14 @@ Original image </br>
 
 ## Style: Van Gogh
 Style image </br>
-<img src='pics/van.jpg'>
+<img src='pics/van.jpg'> </br>
 Generated image </br>
 <img src='pics/generated_van.jpg'>
 
 ## Style: Leonardo da Vinci
 Style image </br>
-<img src='pics/mona.jpg'>
+<img src='pics/mona.jpg'> </br>
 Generated image </br>
 <img src='pics/generated_mona.jpg'>
+
+
