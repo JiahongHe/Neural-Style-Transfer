@@ -18,19 +18,25 @@ Generated image </br>
 <img src='pics/generated_mona.jpg'>
 
 ## How to use it
+Firstly, install the dependencies </br>
 <code>
   pip3 install -r requirements.txt
 </code>
-Then, in main.py </br>
+</br>
+Then, in main.py 
+</br>
 Change these variables:
+</br>
 <ul>
   <li> path_model </li>
   <li> path_content </li>
   <li> path_style </li>
 </ul>
+</br>
 To the path of it's corresponding file (pretrained vgg-19 model, content image and style image) </br>
 And then </br>
 <code>
   python3 main.py
 </code>
+</br>
 
