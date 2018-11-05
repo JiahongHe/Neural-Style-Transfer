@@ -23,22 +23,23 @@ Firstly, install the dependencies </br>
   pip3 install -r requirements.txt
 </code>
 </br>
-Then,<a href='http://www.vlfeat.org/matconvnet/pretrained/#downloading-the-pre-trained-models'> download the pretrianed vgg-19 model </a> </br>.
-Search <code>imagenet-vgg-verydeep-19</code> in this page and download <code>imagenet-vgg-verydeep-19.mat</code>.</br>
+Then download the pretrianed vgg-19 model. </br>
+Search <code>imagenet-vgg-verydeep-19</code> in <a href='http://www.vlfeat.org/matconvnet/pretrained/#downloading-the-pre-trained-models'>this page</a> and download <code>imagenet-vgg-verydeep-19.mat</code>.</br>
 In main.py 
 </br>
-Change these variables:
-</br>
-<ul>
-  <li> path_model </li>
-  <li> path_content </li>
-  <li> path_style </li>
-</ul>
-</br>
+Change these variables: </br>
+<code> path_model </code> </br>
+<code> path_content </code> </br>
+<code> path_style </code> </br>
+
 To the path of it's corresponding file (pretrained vgg-19 model, content image and style image) </br>
 And then </br>
 <code>
   python3 main.py
 </code>
 </br>
+
+## Hyperparameters
+
+variable
 
