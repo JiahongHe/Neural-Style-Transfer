@@ -1,7 +1,6 @@
 # README
 
 Transfers style from one picture to another.
-To <a href='http://www.vlfeat.org/matconvnet/pretrained/#downloading-the-pre-trained-models'> download the pretrianed vgg-19 model </a>
 
 Original image </br>
 <img src='pics/original.jpg'>
@@ -18,13 +17,15 @@ Style image </br>
 Generated image </br>
 <img src='pics/generated_mona.jpg'>
 
-## How to use it
+## Usage
 Firstly, install the dependencies </br>
 <code>
   pip3 install -r requirements.txt
 </code>
 </br>
-Then, in main.py 
+Then,<a href='http://www.vlfeat.org/matconvnet/pretrained/#downloading-the-pre-trained-models'> download the pretrianed vgg-19 model </a> </br>.
+Search <code>imagenet-vgg-verydeep-19</code> in this page and download <code>imagenet-vgg-verydeep-19.mat</code>.</br>
+In main.py 
 </br>
 Change these variables:
 </br>
