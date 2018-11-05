@@ -1,9 +1,12 @@
 # README
 
-Transfers style from one picture to another.
+Transfers style from one picture to another. </br>
+To know how nerual style transfer works: </br>
+<a href='https://www.youtube.com/watch?v=Re2C9INXCNc&index=38&list=PLBAGcD3siRDjBU8sKRk0zX9pMz9qeVxud'> Andew Ng's course </a> </br>
+<a href='https://arxiv.org/abs/1508.06576'> Original paper </a> </br>
 
-Original image </br>
-<img src='pics/original.jpg'>
+## Original image 
+<img src='pics/original.jpg'> 
 
 ## Style: Van Gogh
 Style image </br>
