@@ -8,13 +8,17 @@ STYLE_LAYERS = [
     ('conv4_1', 0.2),
     ('conv5_1', 0.2)]
 
-def NST(path_model, path_content, path_style, num_iterations):
+def NST(path_model, path_content, path_style, num_iterations, alpha, beta, start_from_content):
     g = tf.Graph()
     with tf.Session(graph=g) as sess:
 
         model = load_vgg_model(path_model)
         content, style = get_img(path_content, path_style)
-        generated = generate_noise_image(content)
+
+        if start_from_content:
+            generated = content
+        else:
+            generated = generate_noise_image(content)
 
         sess.run(model['input'].assign(content))
         out = model['conv4_2']
@@ -25,7 +29,7 @@ def NST(path_model, path_content, path_style, num_iterations):
         sess.run(model['input'].assign(style))
         J_style = compute_style_cost(sess, model, STYLE_LAYERS)
 
-        J = total_cost(J_content, J_style, alpha=10, beta=40)
+        J = total_cost(J_content, J_style, alpha, beta)
         optimizer = tf.train.AdamOptimizer(2.0).minimize(J)
 
         sess.run(model['input'].assign(generated))
@@ -37,7 +41,7 @@ def NST(path_model, path_content, path_style, num_iterations):
             sess.run(optimizer)
             generated = sess.run(model['input'])
 
-            if i % 20 == 0:
+            if i > 0 and i % 500 == 0:
                 Jt, Jc, Js = sess.run([J, J_content, J_style])
                 print("Iteration " + str(i) + " :")
                 print("total cost = " + str(Jt))
