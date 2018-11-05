@@ -40,6 +40,12 @@ And then </br>
 </br>
 
 ## Hyperparameters
+Variables <code> alpha </code> and <code> beta </code> in <code> main.py </code> can be tuned to generate different results. </br>
+The results above are generated with <code> alpha = 2000 </code> and <code> beta = 10 </code> </br>
+In short words, <code> alpha </code> and <code> beta </code> determines the content loss's and style loss's contribution to the total loss. </br>
+The generated image would be have more similar content to the content image with higher <code> alpha </code>, </br>
+while the generated image would be more similar to the style image with higher <code> beta </code>. </br>
 
-variable
-
+## Reference
+Most of the code of this project come from the programming assignment of Coursera course <code> Convolutional Neural Networks </code> by Andew Ng. </br>
+<a href='https://github.com/JiahongHe/Coursera-DeepLearning/blob/master/4%20Convolutional%20Neural%20Networks/week4/Art%2BGeneration%2Bwith%2BNeural%2BStyle%2BTransfer%2B-%2Bv2.ipynb'> The assignment notebook.</a>
