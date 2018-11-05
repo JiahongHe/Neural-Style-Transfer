@@ -1,4 +1,3 @@
-from func_utils import *
 from model import NST
 
 if __name__ == '__main__':
