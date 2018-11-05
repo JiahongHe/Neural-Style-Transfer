@@ -1,6 +1,7 @@
 # README
 
 Transfers style from one picture to another.
+To <a href='http://www.vlfeat.org/matconvnet/pretrained/#downloading-the-pre-trained-models'> download the pretrianed vgg-19 model </a>
 
 Original image </br>
 <img src='pics/original.jpg'>
