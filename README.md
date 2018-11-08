@@ -1,4 +1,4 @@
-# README
+# Neural Style Transfer
 
 Transfers style from one picture to another. </br>
 To know how nerual style transfer works: </br>
